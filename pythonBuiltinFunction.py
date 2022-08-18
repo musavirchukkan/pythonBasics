@@ -120,3 +120,59 @@ print(replaced_text)
 # split the text from space
 text = 'Python is a fun programming language'
 print(text.split(' '))
+
+
+# ################   LIST FUNCTIONS   ################
+
+# append element to the list
+list = ['Python', 'is', 'a', 'fun']
+list.append('programming')
+print(list)
+
+# Remove all elements from the list
+list = ['Python', 'is', 'a', 'fun']
+list.clear()
+print(list)
+
+# copy the list
+list = ['Python', 'is', 'a', 'fun']
+list_copy = list.copy()
+print(list_copy)
+
+# return the number of time the value occurs in the list
+list = ['Python', 'is', 'a', 'fun', 'Python']
+print(list.count('Python'))
+
+# Add elements of list2 to the end of list1
+list1 = ['Python', 'is', 'a', 'fun']
+list2 = ['programming', 'language']
+list1.extend(list2)
+
+# postion of element in the list
+list = ['Python', 'is', 'a', 'fun']
+print(list.index('is'))
+
+# add element to the list at the specified position
+list = ['Python', 'is', 'a', 'fun']
+list.insert(1, 'programming')
+print(list)
+
+# remove element from the list
+list = ['Python', 'is', 'a', 'fun']
+list.remove('fun')
+print(list)
+
+# remove element from the list at the specified position
+list = ['Python', 'is', 'a', 'fun']
+list.pop(1)
+print(list)
+
+# reverse the list
+list = ['Python', 'is', 'a', 'fun']
+list.reverse()
+print(list)
+
+# sort the list
+list = ['Python', 'is', 'a', 'fun']
+list.sort()
+print(list)
