@@ -235,3 +235,18 @@ print(dictionary)
 # Returns a list of all the values in the dictionary
 dictionary = {'name': 'John', 'age': '27'}
 print(dictionary.values())
+
+
+# ################   TUPLE FUNCTIONS   ################
+
+# tuple is immutable
+tuple = ('Python', 'is', 'a', 'fun')
+print(tuple)
+
+# Returns the number of times a specified value occurs in a tuple
+tuple = ('Python', 'is', 'a', 'fun', 'Python')
+print(tuple.count('Python'))
+
+# Searches the tuple for a specified value and returns the position of where it was found
+tuple = ('Python', 'is', 'a', 'fun', 'Python')
+print(tuple.index('Python'))
