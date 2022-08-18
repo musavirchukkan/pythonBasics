@@ -250,3 +250,103 @@ print(tuple.count('Python'))
 # Searches the tuple for a specified value and returns the position of where it was found
 tuple = ('Python', 'is', 'a', 'fun', 'Python')
 print(tuple.index('Python'))
+
+
+# ################   SET FUNCTIONS   ################
+
+# set is an unordered collection of distinct elements
+set = {'Python', 'is', 'a', 'fun'}
+print(set)
+
+# add element to the set
+set = {'Python', 'is', 'a', 'fun'}
+set.add('programming')
+print(set)
+
+# remove element from the set
+set = {'Python', 'is', 'a', 'fun'}
+set.remove('fun')
+print(set)
+
+# remove element from the set at the specified position
+set = {'Python', 'is', 'a', 'fun'}
+set.pop()
+print(set)
+
+# remove all elements from the set
+set = {'Python', 'is', 'a', 'fun'}
+set.clear()
+print(set)
+
+# copy the set
+set = {'Python', 'is', 'a', 'fun'}
+set_copy = set.copy()
+print(set_copy)
+
+# Returns a set containing the difference between two or more sets
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set3 = set1.difference(set2)
+print(set3)
+
+# Removes the items in this set that are also included in another, specified set
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set1.difference_update(set2)
+print(set1)
+
+# Remove the specified item
+set = {'Python', 'is', 'a', 'fun'}
+set.discard('fun')
+print(set)
+
+# Returns a set containing the intersection of sets
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set3 = set1.intersection(set2)
+print(set3)
+
+# Returns a set containing the intersection of sets
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set1.intersection_update(set2)
+print(set1)
+
+# Returns whether two sets have a intersection or not
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+print(set1.isdisjoint(set2))
+
+# Returns whether another set contains this set or not
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+print(set1.issubset(set2))
+
+# Returns whether this set contains another set or not
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+print(set1.issuperset(set2))
+
+# Returns a set with the symmetric differences of two sets
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set3 = set1.symmetric_difference(set2)
+print(set3)
+
+# Returns a set with the symmetric differences of two sets
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set1.symmetric_difference_update(set2)
+print(set1)
+
+# Returns a set with the union of sets
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set3 = set1.union(set2)
+print(set3)
+
+# Update the set with another set, or any other iterable
+set1 = {'Python', 'is', 'a', 'fun'}
+set2 = {'programming', 'language'}
+set1.update(set2)
+print(set1)
