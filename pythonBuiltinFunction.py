@@ -176,3 +176,62 @@ print(list)
 list = ['Python', 'is', 'a', 'fun']
 list.sort()
 print(list)
+
+###############   Dictionary Functions   ################
+
+# add key and value to the dictionary
+dictionary = {'name': 'John', 'age': '27'}
+dictionary['address'] = 'USA'
+print(dictionary)
+
+# remove all elements from the dictionary
+dictionary = {'name': 'John', 'age': '27'}
+dictionary.clear()
+print(dictionary)
+
+# Copy the dictionary
+dictionary = {'name': 'John', 'age': '27'}
+dictionary_copy = dictionary.copy()
+print(dictionary_copy)
+
+# Return a dictionary with specific key and value
+x = ('key1', 'key2', 'key3')
+y = 0
+dictionary = dict.fromkeys(x, y)
+print(dictionary)
+
+# Returns the value of the specified key
+dictionary = {'name': 'John', 'age': '27'}
+print(dictionary.get('name'))
+
+# Returns a list containing a tuple for each key value pair
+dictionary = {'name': 'John', 'age': '27'}
+print(dictionary.items())
+
+# Returns a list containing the dictionary keys
+dictionary = {'name': 'John', 'age': '27'}
+print(dictionary.keys())
+
+# remove key and value from the dictionary
+dictionary = {'name': 'John', 'age': '27'}
+dictionary.pop('age')
+print(dictionary)
+
+# remove last inserted key and value from the dictionary
+dictionary = {'name': 'John', 'age': '27'}
+dictionary.popitem()
+print(dictionary)
+
+# Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+dictionary = {'name': 'John', 'age': '27'}
+dictionary.setdefault('address', 'USA')
+print(dictionary)
+
+# Updates the dictionary with the specified key-value pairs
+dictionary = {'name': 'John', 'age': '27'}
+dictionary.update({'address': 'USA'})
+print(dictionary)
+
+# Returns a list of all the values in the dictionary
+dictionary = {'name': 'John', 'age': '27'}
+print(dictionary.values())
