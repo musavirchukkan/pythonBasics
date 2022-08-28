@@ -45,3 +45,9 @@ while True:
     choise = input("do you want to continue (y/n) : ")
     if choise == "n":
         break
+
+# 4
+string = input("enter string : ")
+print("positive indexing : ", string[1:17])
+length = len(string)
+print("negative indexing : ", string[-length+1:-length+17])
