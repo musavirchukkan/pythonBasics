@@ -108,7 +108,182 @@ print("dict : ", dict)
 dict['age'] = '23'
 print("changed dictionary : ", dict)
 
+
 # ############## task 2 #################
+
 
 # 1
 # Create a string & demonstrate the functions
+
+# capitalize()
+sentence = "i love PYTHON"
+capitalized_string = sentence.capitalize()
+print(capitalized_string)
+# casefold()
+text = "pYtHon"
+lowercased_string = text.casefold()
+print(lowercased_string)
+# center()
+sentence = "Python is awesome"
+new_string = sentence.center(25, '*')
+print(new_string)
+# count()
+sentence = "python is awesome"
+count = sentence.count('a')
+print(count)
+# encode()
+sentence = "python is awesome"
+encoded_string = sentence.encode()
+print(encoded_string)
+# endswith()
+sentence = "python is awesome"
+if sentence.endswith("awesome"):
+    print("sentence ends with awesome")
+else:
+    print("sentence does not end with awesome")
+# expandtabs()
+sentence = "python\tis\ta\tawesome\tprogramming\tlanguage"
+new_string = sentence.expandtabs(10)
+print(new_string)
+# find()
+sentence = "python is awesome"
+index = sentence.find('is')
+print(index)
+# format()
+sentence = "python is awesome"
+new_string = sentence.format()
+print(new_string)
+# format_map()
+sentence = "python is awesome"
+new_string = sentence.format_map({"python": "python"})
+print(new_string)
+# index()
+sentence = "python is awesome"
+index = sentence.index('is')
+print(index)
+# isalnum()
+sentence = "python is awesome"
+if sentence.isalnum():
+    print("sentence is alphanumeric")
+else:
+    print("sentence is not alphanumeric")
+# isalpha()
+sentence = "python is awesome"
+if sentence.isalpha():
+    print("sentence is alphabetic")
+else:
+    print("sentence is not alphabetic")
+# isdecimal()
+sentence = "python is awesome"
+if sentence.isdecimal():
+    print("sentence is decimal")
+else:
+    print("sentence is not decimal")
+# isdigit()
+sentence = "python is awesome"
+if sentence.isdigit():
+    print("sentence is digit")
+else:
+    print("sentence is not digit")
+# isidentifier()
+sentence = "python is awesome"
+if sentence.isidentifier():
+    print("sentence is identifier")
+else:
+    print("sentence is not identifier")
+# islower()
+sentence = "python is awesome"
+if sentence.islower():
+    print("sentence is lowercase")
+else:
+    print("sentence is not lowercase")
+# isnumeric()
+sentence = "python is awesome"
+if sentence.isnumeric():
+    print("sentence is numeric")
+else:
+    print("sentence is not numeric")
+# isprintable()
+sentence = "python is awesome"
+if sentence.isprintable():
+    print("sentence is printable")
+else:
+    print("sentence is not printable")
+# isspace()
+sentence = "python is awesome"
+if sentence.isspace():
+    print("sentence is space")
+else:
+    print("sentence is not space")
+# istitle()
+sentence = "python is awesome"
+if sentence.istitle():
+    print("sentence is title")
+else:
+    print("sentence is not title")
+# isupper()
+sentence = "python is awesome"
+if sentence.isupper():
+    print("sentence is uppercase")
+else:
+    print("sentence is not uppercase")
+# join()
+sentence = "python is awesome"
+new_string = sentence.join(["python", "is", "awesome"])
+print(new_string)
+# lower()
+sentence = "python is awesome"
+new_string = sentence.lower()
+print(new_string)
+# maketrans()
+sentence = "python is awesome"
+new_string = sentence.maketrans({"a": "b", "e": "f"})
+print(new_string)
+# partition()
+sentence = "python is awesome"
+new_string = sentence.partition("is")
+print(new_string)
+# replace()
+sentence = "python is awesome"
+new_string = sentence.replace("is", "is not")
+print(new_string)
+# split()
+sentence = "python is awesome"
+new_string = sentence.split(" ")
+print(new_string)
+# splitlines()
+sentence = "python is awesome"
+new_string = sentence.splitlines()
+print(new_string)
+# startswith()
+sentence = "python is awesome"
+if sentence.startswith("python"):
+    print("sentence starts with python")
+else:
+    print("sentence does not start with python")
+# strip()
+sentence = "python is awesome"
+new_string = sentence.strip()
+print(new_string)
+# swapcase()
+sentence = "python is awesome"
+new_string = sentence.swapcase()
+print(new_string)
+# title()
+sentence = "python is awesome"
+new_string = sentence.title()
+print(new_string)
+# translate()
+sentence = "python is awesome"
+new_string = sentence.translate({"a": "b", "e": "f"})
+print(new_string)
+# upper()
+sentence = "python is awesome"
+new_string = sentence.upper()
+print(new_string)
+# zfill()
+sentence = "python is awesome"
+new_string = sentence.zfill(25)
+print(new_string)
+
+# 2
