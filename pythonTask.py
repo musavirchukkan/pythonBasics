@@ -287,3 +287,113 @@ new_string = sentence.zfill(25)
 print(new_string)
 
 # 2
+# Create a list & demonstrate the following.
+
+# append()
+list = ["python", "is", "awesome"]
+list.append("programming")
+print(list)
+# clear()
+list = ["python", "is", "awesome"]
+list.clear()
+print(list)
+# copy()
+list = ["python", "is", "awesome"]
+new_list = list.copy()
+print(new_list)
+# count()
+list = ["python", "is", "awesome"]
+count = list.count("is")
+print(count)
+# extend()
+list = ["python", "is", "awesome"]
+new_list = list.extend(["programming", "language"])
+print(new_list)
+# index()
+list = ["python", "is", "awesome"]
+index = list.index("is")
+print(index)
+# insert()
+list = ["python", "is", "awesome"]
+new_list = list.insert(1, "is not")
+print(new_list)
+# pop()
+list = ["python", "is", "awesome"]
+new_list = list.pop()
+print(new_list)
+# remove()
+list = ["python", "is", "awesome"]
+new_list = list.remove("is")
+print(new_list)
+# reverse()
+list = ["python", "is", "awesome"]
+new_list = list.reverse()
+print(new_list)
+# sort()
+list = ["python", "is", "awesome"]
+new_list = list.sort()
+print(new_list)
+
+# 3
+# Create a tuple & demonstrate the following.
+
+# count()
+tuple = ("python", "is", "awesome")
+count = tuple.count("is")
+print(count)
+# index()
+tuple = ("python", "is", "awesome")
+index = tuple.index("is")
+print(index)
+
+# 4
+# Create a dictionary & demonstrate the following.
+
+# clear()
+dictionary = {"python": "is", "is": "awesome"}
+dictionary.clear()
+print(dictionary)
+# copy()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.copy()
+print(new_dictionary)
+# fromkeys()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.fromkeys(
+    ["python", "is", "awesome"], "programming")
+print(new_dictionary)
+# get()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.get("python")
+print(new_dictionary)
+# items()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.items()
+print(new_dictionary)
+# keys()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.keys()
+print(new_dictionary)
+# values()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.values()
+print(new_dictionary)
+# pop()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.pop("python")
+print(new_dictionary)
+# popitem()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.popitem()
+print(new_dictionary)
+# setdefault()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.setdefault("python", "programming")
+print(new_dictionary)
+# update()
+dictionary = {"python": "is", "is": "awesome"}
+new_dictionary = dictionary.update({"python": "programming"})
+print(new_dictionary)
+
+
+# ############## task 3 ##############
