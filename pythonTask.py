@@ -51,3 +51,11 @@ string = input("enter string : ")
 print("positive indexing : ", string[1:17])
 length = len(string)
 print("negative indexing : ", string[-length+1:-length+17])
+
+# 5
+slist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print("same items : ", slist)
+dlist = [1, 2, "apple", 3.4, "cherry", {
+    "kiwi", 5, "melon", 6}, (7, 8, "banana", 9)]
+print("\n")
+print("different items : ", dlist, "\n")
