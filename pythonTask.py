@@ -1,9 +1,6 @@
 # ############## task 1 #################
 
 # 1
-from multiprocessing.heap import Arena
-
-
 print("Hello World")
 
 # 2
@@ -18,8 +15,33 @@ print("entered elements are : ", list)
 print("sum of entered elements is : ", sum)
 
 #  3
-print("""1.Square
-2.circle
-3.rectangle
-4.triangle""")
-type = input("choose your option : ")
+while True:
+    print("""
+    1.Square
+    2.circle
+    3.rectangle
+    4.triangle""")
+    type = input("choose your option : ")
+    if type == "1":
+        length = int(input("enter the length of square : "))
+        area = length*length
+        print("area of square is : ", area)
+    elif type == "2":
+        radius = int(input("enter the radius of circle : "))
+        area = 3.14*radius*radius
+        print("area of circle is : ", area)
+    elif type == "3":
+        length = int(input("enter the length of rectangle : "))
+        breadth = int(input("enter the breadth of rectangle : "))
+        area = length*breadth
+        print("area of rectangle is : ", area)
+    elif type == "4":
+        base = int(input("enter the base of triangle : "))
+        height = int(input("enter the height of triangle : "))
+        area = 0.5*base*height
+        print("area of triangle is : ", area)
+    else:
+        print("invalid option")
+    choise = input("do you want to continue (y/n) : ")
+    if choise == "n":
+        break
