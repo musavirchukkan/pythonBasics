@@ -577,19 +577,19 @@ while True:
                 # 2 # Assignment operators
                 print("Examples of Assignment Operator")
                 print("""
-                =	 x = 5	        x = 5	
-                +=	 x += 3	        x = x + 3	
-                -=	 x -= 3	        x = x - 3	
-                *=	 x *= 3	        x = x * 3	
-                /=	 x /= 3	        x = x / 3	
-                %=	 x %= 3	        x = x % 3	
-                //=	 x //= 3	x = x // 3	
-                **=	 x **= 3	x = x ** 3	
-                &=	 x &= 3	        x = x & 3	
-                |=	 x |= 3	        x = x | 3	
-                ^=	 x ^= 3	        x = x ^ 3	
-                >>=	 x >>= 3	x = x >> 3	
-                <<=	 x <<= 3	x = x << 3
+                =	 x = 5      x = 5	
+                +=	 x += 3     x = x + 3	
+                -=	 x -= 3     x = x - 3	
+                *=	 x *= 3     x = x * 3	
+                /=	 x /= 3     x = x / 3	
+                %=	 x %= 3     x = x % 3	
+                //=	 x //= 3    x = x // 3	
+                **=	 x **= 3    x = x ** 3	
+                &=	 x &= 3     x = x & 3	
+                |=	 x |= 3     x = x | 3	
+                ^=	 x ^= 3     x = x ^ 3	
+                >>=	 x >>= 3    x = x >> 3	
+                <<=	 x <<= 3    x = x << 3
                 """)
 
                 y = int(input("Enter value of x: "))
@@ -613,12 +613,12 @@ while True:
             elif question == 3:
                 # 3 # Comparison operators
                 print("""
-                ==	Equal	                        x == y	
-                !=	Not equal	                x != y	
-                >	Greater than            	x > y	
-                <	Less than	                x < y	
-                >=	Greater than or equal to	x >= y	
-                <=	Less than or equal to	        x <= y	
+                ==	Equal                       x == y	
+                !=	Not equal                   x != y	
+                >	Greater than                x > y	
+                <	Less than                   x < y	
+                >=	Greater than or equal to    x >= y	
+                <=	Less than or equal to       x <= y	
 
                 """)
                 print("Examples of Comparison Operators")
@@ -645,6 +645,31 @@ while True:
 
             elif question == 4:
                 # 4 # Logical operators
+                print("""
+                and 	Returns True if both statements are true                    x < 5 and  x < 10	
+                or      Returns True if one of the statements is true	            x < 5 or x < 4	
+                not 	Reverse the result, returns False if the result is true	    not(x < 5 and x < 10)	
+                """)
+                print("Examples of Logical Operator")
+                x = True
+                y = False
+                print("x = True, y = False")
+                # and
+                print('x and y is', x and y)
+                # or
+                print('x or y is', x or y)
+                # not
+                print('not x is', not x)
+                print('not y is', not y)
+
+            elif question == 5:
+                # 5 # Identity operators
+
+            elif question == 6:
+                # 6 # Membership operators
+
+            elif question == 7:
+                # 7 # Bitwise operators
 
             else:
                 print("Invalid Question Number, Try Again")
