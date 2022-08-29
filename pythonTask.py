@@ -6,12 +6,16 @@ while True:
     1.Task 1
     2.Task 2
     3.Task 3
+    0.Exit()
     """)
     task = int(input("\nEnter your choice : "))
 
+    if task == 0:
+        break
+
     # ############## task 1 #####################
 
-    if task == 1:
+    elif task == 1:
 
         while True:
             print("""
@@ -26,12 +30,15 @@ while True:
             9. Access the items in the list using slicing.
             10. Create a dictionary and print it.
             11. Change the value of a key.
+            0. Exit()
             """)
 
             question = int(input("choose your question : "))
+            if question == 0:
+                break
 
             # 1 # Python program to print "Hello World"
-            if question == 1:
+            elif question == 1:
 
                 print("\nHello World\n")
 
@@ -157,7 +164,7 @@ while True:
 
     # ############## task 2 #################
 
-    if task == 2:
+    elif task == 2:
 
         while True:
 
@@ -166,12 +173,15 @@ while True:
             2. Create a list & demonstrate the following.
             3. Create a tuple & demonstrate the following.
             4. Create a dictionary & demonstrate the following.
+            0. Exit()
             """)
 
             question = int(input("choose your question : "))
 
+            if question == 0:
+                break
             # 1 # Create a string & demonstrate the functions
-            if question == 1:
+            elif question == 1:
                 # capitalize()
                 print("\n capitalize()")
                 sentence = "i love PYTHON"
@@ -514,6 +524,7 @@ while True:
                 dictionary = {"python": "is", "is": "awesome"}
                 new_dictionary = dictionary.update({"python": "programming"})
                 print(new_dictionary)
+
             else:
                 print("Invalid Question Number, Try Again")
             choice = input(
@@ -523,7 +534,7 @@ while True:
 
     # ############## task 3 ##############
 
-    if task == 3:
+    elif task == 3:
 
         while True:
             print("""
@@ -534,11 +545,15 @@ while True:
             5. Identity operators
             6. Membership operators
             7. Bitwise operators
+            0. Exit()
             """)
 
             question = int(input("choose your question : "))
 
-            if question == 1:
+            if question == 0:
+                break
+
+            elif question == 1:
                 # 1 # Arithmetic operators
                 print("Examples of Arithmetic Operator")
                 a = int(input("Enter 1st number: "))
@@ -674,9 +689,9 @@ while True:
                 c = a
                 print("a = ", a, "b = ", b, "c = a")
                 # is not
-                print(a is not b)
+                print("a is not b : ", a is not b)
                 # is
-                print(a is c)
+                print("a is c : ", a is c)
 
             elif question == 6:
                 # 6 # Membership operators
@@ -709,20 +724,21 @@ while True:
                 """)
 
                 # Examples of Bitwise operators
-                a = 10
-                b = 4
+                a = int(input("Enter a number: "))
+                b = int(input("Enter another number: "))
+                print("a = ", a, "b = ", b)
                 # Print bitwise AND operation
-                print(a & b)
+                print('& : ', a & b)
                 # Print bitwise OR operation
-                print(a | b)
+                print("| : ", a | b)
                 # Print bitwise NOT operation
-                print(~a)
+                print("~a : ", ~a)
                 # print bitwise XOR operation
-                print(a ^ b)
+                print("a ^ b : ", a ^ b)
                 # print bitwise right shift operation
-                print(a >> 2)
+                print("a >> 2 : ", a >> 2)
                 # print bitwise left shift operation
-                print(a << 2)
+                print("a << 2 : ", a << 2)
 
             else:
                 print("Invalid Question Number, Try Again")
@@ -730,3 +746,6 @@ while True:
                 "\nDo you Want to Exit (Y for main menu),enter any key to continue : ")
             if choice == "y":
                 break
+
+    else:
+        print("Invalid Choice, Try Again")
