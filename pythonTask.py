@@ -664,12 +664,65 @@ while True:
 
             elif question == 5:
                 # 5 # Identity operators
+                print("""
+                is      Returns True if both variables are the same object      x is y	
+                is not  Returns True if both variables are not the same object	x is not y	
+                """)
+                print("Examples of Identity Operators")
+                a = int(input("Enter a number: "))
+                b = int(input("Enter another number: "))
+                c = a
+                print("a = ", a, "b = ", b, "c = a")
+                # is not
+                print(a is not b)
+                # is
+                print(a is c)
 
             elif question == 6:
                 # 6 # Membership operators
+                print("""
+                in      Returns True if a sequence with the specified value is present in the object        x in y
+                not in  Returns True if a sequence with the specified value is not present in the object    x not in y
+                """)
+                print("Example of membership operator")
+
+                list = ['10', '20', '30', '40', '50']
+                print(list)
+                x = (input("Enter item to check : "))
+
+                # not in
+                if (x not in list):
+                    print("item is NOT present in given list")
+                # in
+                if (x in list):
+                    print("item is present in given list")
 
             elif question == 7:
                 # 7 # Bitwise operators
+                print("""
+                & 	AND                     Sets each bit to 1 if both bits are 1
+                |	OR                      Sets each bit to 1 if one of two bits is 1
+                ^	XOR                     Sets each bit to 1 if only one of two bits is 1
+                ~ 	NOT                     Inverts all the bits
+                <<	Zero fill left shift    Shift left by pushing zeros in from the right and let the leftmost bits fall off
+                >>	Signed right shift      Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+                """)
+
+                # Examples of Bitwise operators
+                a = 10
+                b = 4
+                # Print bitwise AND operation
+                print(a & b)
+                # Print bitwise OR operation
+                print(a | b)
+                # Print bitwise NOT operation
+                print(~a)
+                # print bitwise XOR operation
+                print(a ^ b)
+                # print bitwise right shift operation
+                print(a >> 2)
+                # print bitwise left shift operation
+                print(a << 2)
 
             else:
                 print("Invalid Question Number, Try Again")
